@@ -17,6 +17,7 @@ output:
 ---
 
 I write this guide with very itchy skin across my collarbone. Itchiness is such a strange thing, not quite pain, not quite pressure. You can itch for all sorts of reasons. A hair on your skin, a scratch or a bite from a beastie, or worse. 
+
 Athena compulsively over-grooms her stomach, paws, and neck. They itch for her. On her paws you can see contact dermatitist, but her skin is free of mites and bugs. So for about a year now I've been collecting data. 
 
 ```{r}
@@ -75,3 +76,7 @@ ggplot (shortgather) +
 
 
 ```
+
+
+I write this guide with very itchy skin across my collarbone. Itchiness is such a strange thing, not quite pain, not quite pressure. You can itch for all sorts of reasons. A hair on your skin, a scratch or a bite from a beastie, a 
+
