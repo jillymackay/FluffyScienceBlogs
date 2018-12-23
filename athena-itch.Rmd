@@ -1,0 +1,77 @@
+---
+title: "Keeping Records"
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+author: "Jilly MacKay"
+date: "23 December 2018"
+output: 
+  html_document:
+    theme: spacelab
+    highlight: haddock
+    toc: true 
+    toc_float: true
+    toc_depth: 3
+---
+
+I write this guide with very itchy skin across my collarbone. Itchiness is such a strange thing, not quite pain, not quite pressure. You can itch for all sorts of reasons. A hair on your skin, a scratch or a bite from a beastie, or worse. 
+Athena compulsively over-grooms her stomach, paws, and neck. They itch for her. On her paws you can see contact dermatitist, but her skin is free of mites and bugs. So for about a year now I've been collecting data. 
+
+```{r}
+library(tidyverse)
+library(wesanderson)
+short <- readxl::read_excel("data/Allergies.xlsx", 
+                            sheet = "Abbrev Data")
+
+
+ggplot(short) +
+  geom_point(aes(x = Date, y = `Stomach Itching`, colour = factor(Antihistamine), 
+                 shape = factor(`Hypoallergenic diet`) )) +
+  theme_classic() 
+
+ggplot(short) +
+  geom_point(aes(x = Date, y = `Paw Itching`, colour = factor(Antihistamine), 
+                 shape = factor(`Hypoallergenic diet`) )) +
+  theme_classic() 
+
+
+ggplot(short) +
+  geom_boxplot(aes(x = as.factor(Antihistamine), y = `Stomach Itching`))
+
+
+ggplot(short) +
+  geom_boxplot(aes(x = `Hypoallergenic diet`, y = `Stomach Itching`)) +
+  theme_classic()
+
+ggplot(short) +
+  geom_boxplot(aes(x = Antihistamine, y = `Stomach Itching`)) +
+  theme_classic()
+
+ggplot(short) +
+  geom_boxplot(aes(x = Antihistamine, y = `Paw Itching`)) +
+  theme_classic()
+
+ggplot(short) +
+  geom_boxplot(aes(x = `Hypoallergenic diet`, y = `Paw Itching`)) +
+  theme_classic()
+
+shortgather <- short %>%
+  gather (key = BodyPart, value = Itchiness,
+          `Stomach Itching`, `Paw Itching`)
+
+
+ggplot (shortgather, aes(x=Antihistamine, y = Itchiness)) +
+  geom_boxplot(fill = "gray66", colour = "slateblue4") +
+  geom_jitter(colour = "lightslateblue")+
+  facet_wrap(~BodyPart) +
+  theme_classic()
+
+ggplot (shortgather) +
+  geom_boxplot(aes(x=`Hypoallergenic diet`, y = Itchiness)) +
+  facet_wrap(~BodyPart) +
+  theme_classic()
+
+
+```
