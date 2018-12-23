@@ -1,0 +1,19 @@
+---
+title: "Keeping Records"
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+author: "Jilly MacKay"
+date: "23 December 2018"
+output: 
+  html_document:
+    theme: spacelab
+    highlight: haddock
+    toc: true 
+    toc_float: true
+    toc_depth: 3
+---
+
+I write this guide with very itchy skin across my collarbone. Itchiness is such a strange thing, not quite pain, not quite pressure. You can itch for all sorts of reasons. A hair on your skin, a scratch or a bite from a beastie, a 
