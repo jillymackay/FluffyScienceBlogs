@@ -1,0 +1,106 @@
+---
+title: "Compassionate Critical Analysis"
+author: "Jilly MacKay"
+date: "3rd January 2020"
+output: 
+  slidy_presentation:
+      highlight: haddock
+      theme: flatly
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Critical Analysis
+
+Critical analysis is an important aspect of academic discourse. It is often one of the elements considered in a marking scheme. 
+
+If you are asked to 
+- Evaluate
+- Critique
+- Analyse
+- Conclude
+- Discuss 
+- Illustrate
+- Judge
+- Defend
+- Appraise
+- Develop
+- Design
+
+You are going to need to use your critical analysis skills. 
+
+## Critical Analysis Is Not . . .
+
+Critical analysis is not a personal attack. It does not imply you know everything about a topic. Critical analysis does not mean you disagree with the conclusions of a piece of work. 
+
+
+
+## Features of Critical Analysis
+
+Critical analysis is a lot like feedback. You should identify specific, fair and reasonable criticisms of a piece of work. 
+
+
+
+
+## Critical Examples
+Read these two examples of academic writing. 
+
+### Example One
+Academics like to eat cake (Rhind, 2001; MacKay et al. 2016) with cupcakes and brownies favoured at a consumption rate almost twice that of whole cakes (Hughes, 2015). Hughes speculated that this was because 'bite size' chunks of cake were easier for office guests to take. Individual service sizes are therefore more popular in offices (Pollock et al, 2009) 
+
+### Example Two
+Rhind (2001) observed that cakes left in an academic common area were quickly eaten, and stated that it was 'common knowledge' that academics like cake. Quanitfying cake eating in the office is challenging as several different cake types are commonly observed, with Hughes (2015) noting noting that cupcakes and brownies were consumed almost twice as quickly as whole cakes in two out of three observed academic study areas. The relationship between cake type and consumption rate makes it difficult to compare over time. MacKay et al (2016) recently explored cake depreciation rates in the office and found that cake consumption has remained at least as high as the levels observed in 2001, although they did not distinguish between cake types as Hughes did, which may make this an overestimate as we expect cupcakes have grown in popularity in line with other individual-portion confectionaries in offices (Pollock et al, 2009).
+
+
+## Critical Examples | What's the difference?
+
+Example Two is a better example of critical analysis. It is specific, fair and reasonable. 
+
+
+### Specific
+Rhind (2001) observed that cakes left in an academic common area were quickly eaten, and stated that it was 'common knowledge' that academics like cake. <font color = "blue">Quanitfying cake eating in the office is challenging as several different cake types are commonly observed</font>, with Hughes (2015) noting noting that cupcakes and brownies were consumed almost twice as quickly as whole cakes in two out of three observed academic study areas. The relationship between cake type and consumption rate makes it difficult to compare over time. MacKay et al (2016) recently explored cake depreciation rates in the office and found that cake consumption has remained at least as high as the levels observed in 2001, although they did not distinguish between cake types as Hughes did, which may make this an overestimate as we expect cupcakes have grown in popularity in line with other individual-portion confectionaries in offices (Pollock et al, 2009).
+
+
+## Critical Examples | What's the difference?
+
+
+
+### Reasonable
+Rhind (2001) observed that cakes left in an academic common area were quickly eaten, and stated that it was 'common knowledge' that academics like cake. Quanitfying cake eating in the office is challenging as several different cake types are commonly observed, with Hughes (2015) noting noting that cupcakes and brownies were consumed almost twice as quickly as whole cakes in two out of three observed academic study areas. The relationship between cake type and consumption rate makes it difficult to compare over time. MacKay et al (2016) recently explored cake depreciation rates in the office and found that cake consumption has remained at least as high as the levels observed in 2001, although they did not distinguish between cake types as Hughes did, which may make this an overestimate as we expect cupcakes have grown in popularity in line with other individual-portion confectionaries in offices (Pollock et al, 2009).
+
+
+## Critical Examples | What's the difference?
+
+
+
+### Fair
+Rhind (2001) observed that cakes left in an academic common area were quickly eaten, and stated that it was 'common knowledge' that academics like cake. Quanitfying cake eating in the office is challenging as several different cake types are commonly observed, with Hughes (2015) noting noting that cupcakes and brownies were consumed almost twice as quickly as whole cakes in two out of three observed academic study areas. The relationship between cake type and consumption rate makes it difficult to compare over time. MacKay et al (2016) recently explored cake depreciation rates in the office and found that cake consumption has remained at least as high as the levels observed in 2001, although they did not distinguish between cake types as Hughes did, which may make this an overestimate as we expect cupcakes have grown in popularity in line with other individual-portion confectionaries in offices (Pollock et al, 2009).
+
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
